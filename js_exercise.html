@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício aula 02 de Javascript</title>
+    <script>
+      let nome = window.prompt("Olá, qual é seu nome?");
+      var operacao = parseInt(
+        prompt(
+          nome +
+            ", que operação deseja realizar?\n 1 - Soma \n 2 - Subtração \n 3 - Divisão \n 4 - Multiplicação"
+        )
+      );
+      console.log(operacao);
+      var numeroUm = parseInt(prompt("Insira o primeiro número"));
+      console.log(numeroUm);
+
+      var numeroDois = parseInt(prompt("Insira o segundo número"));
+      console.log(numeroDois);
+      var resultado;
+
+      switch (operacao) {
+        case 1:
+          resultado = numeroUm + numeroDois;
+          break;
+        case 2:
+          resultado = numeroUm - numeroDois;
+          break;
+        case 3:
+          resultado = numeroUm / numeroDois;
+          break;
+        case 4:
+          resultado = numeroUm * numeroDois;
+          break;
+        default:
+          resultado = "A operação é inválida";
+      }
+
+      alert("\n Resultado: " + resultado);
+    </script>
+  </head>
+  <body></body>
+</html>
